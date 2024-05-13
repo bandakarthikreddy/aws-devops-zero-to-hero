@@ -20,7 +20,7 @@ phases:
       - echo "Building Docker image..."
       
       - docker build -t $DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-app:latest .
-      - docker push $DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-app:latest
+      - docker push karthikreddybanda1997/awscodecommit:tagname
   post_build:
     commands:
       - echo "Build completed successfully!"
